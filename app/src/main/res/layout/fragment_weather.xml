@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/weatherLayout"
+    android:background="@drawable/sunny">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:padding="5dp"
+        android:elevation="2dp"
+        android:layout_margin="15dp"
+        android:layout_gravity="center"
+        android:alpha="0.4"
+        android:background="@drawable/round_image">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day And Date"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:id="@+id/dateTextView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="10sp"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/placeTextView" />
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/sun1"
+            android:scaleType="fitXY"
+            android:layout_marginTop="80sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/weatherImageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weatherImageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:text="Description"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:id="@+id/descTextView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:text="30"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:id="@+id/temperatureTextView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="o"
+            android:layout_below="@id/descTextView"
+            android:layout_marginTop="18sp"
+            android:layout_marginLeft="200sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_below="@id/descTextView"
+            android:layout_marginTop="21sp"
+            android:layout_marginLeft="215sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humidity: "
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300sp"
+            android:textSize="20sp"
+            android:id="@+id/humidityTextView"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind Speed: "
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350sp"
+            android:textSize="20sp"
+            android:id="@+id/windTextView"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

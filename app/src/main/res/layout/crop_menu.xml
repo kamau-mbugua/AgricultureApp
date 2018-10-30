@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_margin="10sp"
+        app:cardBackgroundColor="@color/cardview_shadow_end_color"
+        app:cardElevation="5sp"
+        app:cardUseCompatPadding="true"
+        android:padding="5sp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2sp">
+
+            <ImageView
+                android:id="@+id/crop_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_margin="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/crop" />
+
+            <TextView
+                android:id="@+id/crop_name"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/crop_image"
+                android:text="Crop name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp">
+
+            </Spinner>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_below="@id/crop_name"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_toEndOf="@id/crop_image"/>
+
+            <ImageButton
+                android:id="@+id/remove"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_remove"
+                android:scaleType="center"
+                android:layout_below="@id/crop_name"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="45dp"/>
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/remove"
+                android:text="0"
+                android:layout_alignBaseline="@id/remove"
+                android:layout_alignTop="@id/remove"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <ImageButton
+                android:id="@+id/add"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_add"
+                android:scaleType="center"
+                android:layout_below="@id/crop_name"
+                android:layout_marginStart="280dp"
+                android:layout_marginTop="45dp"
+                android:layout_alignBaseline="@id/add"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

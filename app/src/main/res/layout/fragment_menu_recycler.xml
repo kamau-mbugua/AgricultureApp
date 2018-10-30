@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_recycler_view"
+        android:scrollbars="vertical">
+    </android.support.v7.widget.RecyclerView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/viewCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_shopping_cart"
+        app:backgroundTint="@color/lightGreen" />
+    <TextView
+        android:id="@+id/notifyCount"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:text="0"
+        android:elevation="8dp"
+        android:layout_marginTop="334dp"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:background="@drawable/rounded_textview" />
+
+</RelativeLayout>

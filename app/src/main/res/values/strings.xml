@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Agriculture</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="channel_name">Channel One</string>
+    <string name="channel_description">Agriculture App Notification</string>
+</resources>
